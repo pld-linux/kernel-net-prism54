@@ -14,7 +14,7 @@ Release:	%{rel}@%{_kernel_ver_str}
 License:	GPL v2
 Group:		Base/Kernel
 Source0:	http://prism54.org/pub/linux/snapshot/tars/prism54-svn-latest.tar.bz2
-# Source0-md5:	041122d81532297a3a0531792739354d
+# Source0-md5:	6c5ffe1f32db577ffd2083cbc3622eb6
 URL:		http://prism54.org/
 BuildRequires:	%{kgcc_package}
 %if %{with dist_kernel}
