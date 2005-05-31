@@ -35,14 +35,15 @@ Módulos de núcleo para Prism54.
 Sterowniki Prism54 dla j±dra Linuksa.
 
 %package -n kernel-smp-net-prism54
-Summary:	Prism54 smp kernel drivers
+Summary:	Prism54 SMP kernel drivers
+Summary(pl):	Sterowniki Prism54 dla j±dra Linuksa SMP
 Group:		Base/Kernel
 Requires(post,postun):	/sbin/depmod
 
 %description -n kernel-smp-net-prism54
 Prism54 kernel drivers. SMP version.
 
-%description -n kernel-net-prism54 -l es
+%description -n kernel-smp-net-prism54 -l es
 Módulos de núcleo para Prism54. Versión SMP.
 
 %description -n kernel-smp-net-prism54 -l pl
@@ -79,7 +80,6 @@ done
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT/lib/modules/%{_kernel_ver}{,smp}/kernel/drivers/net/wireless
 
 cd ksrc/built
