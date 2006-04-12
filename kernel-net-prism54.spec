@@ -4,12 +4,12 @@
 %bcond_without	smp		# don't build SMP module
 %bcond_with	verbose		# verbose build (V=1)
 #
+%define		rel	0.1
 Summary:	Prism54 kernel drivers
 Summary(es):	Driveres del núcleo de Prism54
 Summary(pl):	Sterowniki Prism54 dla j±dra Linuksa
 Name:		kernel-net-prism54
 Version:	1.3
-%define		rel	0.1
 Release:	%{rel}@%{_kernel_ver_str}
 License:	GPL v2
 Group:		Base/Kernel
@@ -18,7 +18,7 @@ Source0:	http://prism54.org/pub/linux/snapshot/tars/prism54-svn-latest.tar.bz2
 URL:		http://prism54.org/
 BuildRequires:	%{kgcc_package}
 %if %{with dist_kernel}
-BuildRequires:	kernel-module-build >= 2.6.7
+BuildRequires:	kernel-module-build >= 3:2.6.7
 %requires_releq_kernel_up
 %endif
 BuildRequires:	rpmbuild(macros) >= 1.153
