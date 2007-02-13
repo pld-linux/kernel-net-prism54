@@ -6,8 +6,8 @@
 #
 %define		rel	0.1
 Summary:	Prism54 kernel drivers
-Summary(es.UTF-8):   Driveres del núcleo de Prism54
-Summary(pl.UTF-8):   Sterowniki Prism54 dla jądra Linuksa
+Summary(es.UTF-8):	Driveres del núcleo de Prism54
+Summary(pl.UTF-8):	Sterowniki Prism54 dla jądra Linuksa
 Name:		kernel-net-prism54
 Version:	1.3
 Release:	%{rel}@%{_kernel_ver_str}
@@ -36,7 +36,7 @@ Sterowniki Prism54 dla jądra Linuksa.
 
 %package -n kernel-smp-net-prism54
 Summary:	Prism54 SMP kernel drivers
-Summary(pl.UTF-8):   Sterowniki Prism54 dla jądra Linuksa SMP
+Summary(pl.UTF-8):	Sterowniki Prism54 dla jądra Linuksa SMP
 Group:		Base/Kernel
 Requires(post,postun):	/sbin/depmod
 
